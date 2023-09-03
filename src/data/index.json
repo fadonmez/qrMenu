@@ -1,0 +1,107 @@
+[
+  {
+    "category": "Burgers",
+    "items": [
+      {
+        "id": 1,
+        "name": "Big King",
+        "price": "10",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/big-king-menu.png?v=263"
+      },
+      {
+        "id": 2,
+        "name": "King Beef",
+        "price": "100",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/big-king-menu.png?v=263"
+      },
+      {
+        "id": 3,
+        "name": "Texas",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/big-king-menu.png?v=263"
+      },
+      {
+        "id": 4,
+        "name": "Chicken",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/big-king-menu.png?v=263"
+      }
+    ]
+  },
+  {
+    "category": "Drinks",
+    "items": [
+      {
+        "id": 1,
+        "name": "Cola",
+        "price": "19.5",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 2,
+        "name": "Fanta",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 3,
+        "name": "Sprite",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 4,
+        "name": "Lemonade",
+        "price": "20",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 5,
+        "name": "Lemonade",
+        "price": "20",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 6,
+        "name": "Lemonade",
+        "price": "20",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 7,
+        "name": "Lemonade",
+        "price": "20",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mini Sundae",
+        "price": "19.5",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 2,
+        "name": "Ice Cream",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 3,
+        "name": "Baklava",
+        "price": "15",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      },
+      {
+        "id": 4,
+        "name": "Kunefe",
+        "price": "20",
+        "image": "https://www.burgerking.com.tr/cmsfiles/products/sundae.png?v=263"
+      }
+    ]
+  }
+]
