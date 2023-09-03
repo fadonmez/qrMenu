@@ -1,8 +1,9 @@
-# React + Vite
+# QR Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app developed with tailwindCSS,React and nextUI components.
 
-Currently, two official plugins are available:
+This is the first version of this app. In the next update, an admin system will be added.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Links are down below.
+
+- [NextUI](https://nextui.org/) uses [TailwindCSS](https://tailwindcss.com/)
