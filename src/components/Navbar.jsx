@@ -9,14 +9,20 @@ import {
   NavbarMenuToggle,
   Link,
   Button,
+  menu,
 } from "@nextui-org/react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link as RouterLink } from "react-router-dom";
 import logo from "../images/potkal.png";
 
-export default function Navbar() {
+export default function Navbar({ mode }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Main Dishes", "Drinks", "Desserts"];
+  let menuItems;
+  if (mode === "admin") {
+    menuItems = ["See Stock", "Add Stock"];
+  } else if (mode === "user") {
+    menuItems = ["Main Dishes", "Drinks", "Desserts"];
+  }
 
   return (
     <NavbarNextUI
@@ -27,7 +33,9 @@ export default function Navbar() {
     >
       <NavbarContent>
         <NavbarBrand>
-          <img src={logo} className="w-1/4 h-16" alt="logo" />
+          <RouterLink to={mode === "admin" ? "/admin" : "/"}>
+            <img src={logo} className="w-1/2 h-16" alt="logo" />
+          </RouterLink>
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -41,7 +49,9 @@ export default function Navbar() {
             <NavbarItem key={index}>
               <NavLink
                 to={
-                  item === "Main Dishes"
+                  mode === "admin"
+                    ? `/admin/${item.toLowerCase().replace(/\s+/g, "")}`
+                    : item === "Main Dishes"
                     ? "/"
                     : `/${item.toLowerCase().replace(/\s+/g, "")}`
                 }
@@ -62,7 +72,9 @@ export default function Navbar() {
                 setIsMenuOpen((prev) => !prev);
               }}
               to={
-                item === "Main Dishes"
+                mode === "admin"
+                  ? `/admin/${item.toLowerCase().replace(/\s+/g, "")}`
+                  : item === "Main Dishes"
                   ? "/"
                   : `/${item.toLowerCase().replace(/\s+/g, "")}`
               }

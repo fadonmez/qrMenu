@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 export default function MainLayout() {
   return (
     <div className="flex flex-col h-screen">
-      <Navbar />
+      <Navbar mode="user" />
       <Outlet />
       <Footer />
     </div>

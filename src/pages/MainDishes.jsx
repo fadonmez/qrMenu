@@ -6,7 +6,7 @@ export default function MainDishes() {
   return (
     <div className="grid items-center justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       {burgers.map((burger) => {
-        return <Product key={burger.id} product={burger} />;
+        return <Product key={burger.id} product={burger} mode="user" />;
       })}
     </div>
   );

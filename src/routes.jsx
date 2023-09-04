@@ -8,6 +8,10 @@ import MainDishes from "./pages/MainDishes.jsx";
 import Drinks from "./pages/Drinks.jsx";
 import Desserts from "./pages/Desserts.jsx";
 import Page404 from "./pages/Page404.jsx";
+import AddStock from "./pages/AddStock.jsx";
+import Admin404 from "./pages/Admin404.jsx";
+import HomeAdmin from "./pages/HomeAdmin.jsx";
+import SeeStock from "./pages/SeeStock.jsx";
 
 export const routes = [
   {
@@ -39,5 +43,23 @@ export const routes = [
         <AdminLayout />
       </AdminRoute>
     ),
+    children: [
+      {
+        index: true,
+        element: <HomeAdmin />,
+      },
+      {
+        path: "addstock",
+        element: <AddStock />,
+      },
+      {
+        path: "seestock/:type",
+        element: <SeeStock />,
+      },
+      {
+        path: "*",
+        element: <Admin404 />,
+      },
+    ],
   },
 ];
